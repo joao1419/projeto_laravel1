@@ -35,6 +35,8 @@ Route::post('/cadastrar-produto',function(Request $request){
     ]);
 
     echo "Produto criado com sucesso!";
+
+    echo "<br><br><button><a href = 'http://127.0.0.1:8000'>Voltar para o inicio</a></button>";
 });
 Route::get('/listar-produto/{id}',function($id){
 
@@ -82,6 +84,8 @@ Route::post('/editar-produto/{id}',function(Request $request, $id){
 
     echo "Produto editado com sucesso!";
 
+    echo "<br><br><button><a href = 'http://127.0.0.1:8000'>Voltar para o inicio</a></button>";
+
 });
 
 
@@ -97,5 +101,7 @@ Route::get('/excluir-produto/{id}',function($id){
 
 
     echo "Produto excluido com sucesso!";
+
+    echo "<br><br><button><a href = 'http://127.0.0.1:8000'>Voltar para o inicio</a></button>";
 
 });
